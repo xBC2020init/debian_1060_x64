@@ -1,0 +1,18 @@
+ubuntu@ubuntu:~/Desktop$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+gpg: key DA87E80D6294BE9B: public key "Debian CD signing key <debian-cd@lists.debian.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+ubuntu@ubuntu:~/Desktop$ gpg --verify SHA256SUMS.sign SHA256SUMS
+gpg: Signature made Sun 27 Sep 2020 12:24:30 AM UTC
+gpg:                using RSA key DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+gpg: Good signature from "Debian CD signing key <debian-cd@lists.debian.org>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: DF9B 9C49 EAA9 2984 3258  9D76 DA87 E80D 6294 BE9B
+ubuntu@ubuntu:~/Desktop$ gpg --verify SHA512SUMS.sign SHA512SUMS
+gpg: Signature made Sun 27 Sep 2020 12:24:31 AM UTC
+gpg:                using RSA key DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+gpg: Good signature from "Debian CD signing key <debian-cd@lists.debian.org>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: DF9B 9C49 EAA9 2984 3258  9D76 DA87 E80D 6294 BE9B
